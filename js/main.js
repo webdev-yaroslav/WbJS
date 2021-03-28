@@ -26,17 +26,18 @@ modalClose.addEventListener('click', closeModal);
 
 // scroll smooth
 
-(function() {
-	const scrollLink = document.querySelectorAll('a.scroll-link');
+{
+	const scrollLinks = document.querySelectorAll('a.scroll-link');
 
-	for (let i = 0; i < scrollLink.length; i++) {
-		scrollLinks[i].addEventListener('click', function(event) {
+	for (const scrollLink of scrollLinks) {
+		scrollLink.addEventListener('click', event => {
 			event.preventDefault();
-			const id = scrollLinks[i].getAttribute('href');
-			documnet.querySelector(id).scrollIntoView({
+			const id = scrollLink.getAttribute('href');
+	
+			document.querySelector(id).scrollIntoView({
 				behavior: 'smooth',
-				block: 'start',
-			})
+				block: 'start'
+			});
 		});
 	}
-})()
+};
