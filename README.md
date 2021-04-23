@@ -1,2 +1,2 @@
 # WbJS
-Интенсив "Свой Вилберис на JavaScript
+Интенсив "Wildberries" на JavaScript
