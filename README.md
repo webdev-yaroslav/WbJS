@@ -1,2 +1,2 @@
-# WbJS
-Интенсив "Wildberries" на JavaScript
+# Интенсив "Wildberries" на JavaScript
+WbJS
